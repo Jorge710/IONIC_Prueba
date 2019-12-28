@@ -1,5 +1,7 @@
 {
   "name": "appCurriculum",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
