@@ -12,10 +12,10 @@
 <ion-content>
   <ion-card class="welcome-card">
     <!--<img src="/assets/shapes.svg" alt=""/>-->
-    <ion-card-header>
+    <ion-card-header style="background: blue;">
       <ion-card-title>Datos Personales</ion-card-title>
     </ion-card-header>
-    <ion-card-content>
+    <ion-card-content style="background: skyblue;">
       <p>CI:		:1723036552</p>
       <p>NOMBRES	: JORGE ALEXIS</p>
       <p>APELLIDOS	: IZA VIRACOCHA</p>
@@ -46,14 +46,47 @@
     <ion-item>
       <ion-icon slot="start" color="medium" name="book"></ion-icon>
       <ion-card-subtitle>Secundaria 2005-2011</ion-card-subtitle>
-      <p ALIGN="left"><strong>BACHILLER EN CIENCIAS, ESPECIALIDAD “FÍSICO MATEMÁTICO”</strong></p>
-      <p ALIGN="center">Colegio Nacional Polivalente “Juan De Salinas” - Sangolquí, Ecuador</p>
+      <p ALIGN="left" style="padding: 15px;"><strong>BACHILLER EN CIENCIAS, ESPECIALIDAD “FÍSICO MATEMÁTICO”</strong></p>
+      <ion-card-subtitle>Colegio Nacional Polivalente “Juan De Salinas” - Sangolquí, Ecuador</ion-card-subtitle>
+      
     </ion-item>
     <ion-item>
       <ion-icon slot="start" color="medium" name="book"></ion-icon>
       <ion-card-subtitle>Superior 2016-2020</ion-card-subtitle>
-      <p ALIGN="left"><strong>TNLGO. ANÁLISIS DE SISTEMAS INFORMÁTICOS</strong></p>
-      <p ALIGN="center">Escuela Politécnica Nacional - Quito, Ecuador</p>
+      <p ALIGN="left" style="padding: 15px;"><strong>TNLGO. ANÁLISIS DE SISTEMAS INFORMÁTICOS</strong></p>
+      
+      <ion-card-subtitle>Escuela Politécnica Nacional - Quito, Ecuador</ion-card-subtitle>
     </ion-item>
   </ion-list>
+  <ion-list lines="none">
+    <ion-list-header>
+      <ion-label><strong>Certificados</strong></ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-icon slot="start" color="medium" name="book"></ion-icon>
+      <ion-card-subtitle>2013</ion-card-subtitle>
+      <p ALIGN="left" style="padding: 15px;"><strong>➢	Certificado Suficiencia Idioma Inglés</strong></p>
+      <p ALIGN="center">Howard Institute</p>
+      <a href="../assets/instCertificado.PNG">Ver</a>
+    </ion-item>
+    <ion-item>
+      <ion-icon slot="start" color="medium" name="book"></ion-icon>
+      <ion-card-subtitle>2017</ion-card-subtitle>
+      <p ALIGN="left" style="padding: 15px;"><strong>➢	Certificado Suficiencia Idioma Inglés</strong></p>
+      <p ALIGN="center">Centro de Educaci&oacute;n Continua</p>
+      <a href="../assets/epnCertificado.PNG">Ver</a>
+    </ion-item>
+  </ion-list>
+  <ion-list lines="none">
+    <ion-list-header>
+      <ion-label><strong>Experiencia</strong></ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-icon slot="start" color="medium" name="build"></ion-icon>
+      <ion-card-subtitle>Noviembre 2019</ion-card-subtitle>
+      <p ALIGN="left" style="padding: 15px;"><strong>Escuela Politécnica Nacional</strong></p>
+      <p ALIGN="center"></p>
+    </ion-item>
+  </ion-list>
+  
 </ion-content>
