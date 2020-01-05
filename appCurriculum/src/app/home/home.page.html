@@ -6,10 +6,13 @@
     <ion-title>
       Home
     </ion-title>
+    <ion-label>
+      <strong><p style="color: blue; text-align: center;">Fecha Actual: {{formattedDate}}   | unixTime: {{unixTime}}</p></strong>
+    </ion-label>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
   <ion-card class="welcome-card">
     <!--<img src="/assets/shapes.svg" alt=""/>-->
     <ion-card-header style="background: #9094a2;">
@@ -18,8 +21,25 @@
     <ion-card-content>
       <p>CI:		:1723036552</p>
       <p>NOMBRES	: JORGE ALEXIS</p>
+      
       <p>APELLIDOS	: IZA VIRACOCHA</p>
-      <p>EDAD		: 26</p>
+      <p>EDAD		: {{edadActual}}</p>
+      <!--<ion-label>
+        {{currentDate}}
+      </ion-label>
+    
+      <ion-label>
+        {{formattedDate}}
+      </ion-label>
+
+      <ion-label>
+        {{formattedDateObj}}
+      </ion-label>
+
+      <ion-label>
+        {{unixTime}}
+      </ion-label>-->
+      
       <p>DIRECCIÓN	: SANGOLQUÍ PARROQUIA FAJARDO – BARRIO RUMILOMA </p>
       <p>TELÉFONO	: <a href="https://wa.me/593992245389">0992245389</a> - (02)2081944</p>
       <p>EMAIL : <a href="mailto:izajorge7@gmail.com">izajorge7@gmail.com</a></p>
@@ -35,7 +55,7 @@
       <img src="/assets/foto.png" style="padding: 10px;" alt="FOTO"/>
       <p ALIGN="justify">Formar parte de un equipo de trabajo, para contribuir con mi experiencia y 
         habilidades adquiridos en los años de estudio, as&iacute; llevar al logro de
-         las metas generales de la empresa, adem&acute;s de permitir oportunidades de
+         las metas generales de la empresa, adem&aacute;s de permitir oportunidades de
           desarollo personal y profesional.</p>
     </ion-item>
   </ion-list>
@@ -45,14 +65,14 @@
     </ion-list-header>
     <ion-item>
       <ion-icon slot="start" color="medium" name="book"></ion-icon>
-      <ion-card-subtitle>Secundaria 2005-2011</ion-card-subtitle>
+      <ion-card-subtitle>Secundaria 2005 - 2011</ion-card-subtitle>
       <p ALIGN="left" style="padding: 15px;"><strong>BACHILLER EN CIENCIAS, ESPECIALIDAD “FÍSICO MATEMÁTICO”</strong></p>
       <ion-card-subtitle>Colegio Nacional Polivalente “Juan De Salinas” - Sangolquí, Ecuador</ion-card-subtitle>
       
     </ion-item>
     <ion-item>
       <ion-icon slot="start" color="medium" name="book"></ion-icon>
-      <ion-card-subtitle>Superior 2016-2020</ion-card-subtitle>
+      <ion-card-subtitle>Superior 2013 - Al Presente</ion-card-subtitle>
       <p ALIGN="left" style="padding: 15px;"><strong>TNLGO. ANÁLISIS DE SISTEMAS INFORMÁTICOS</strong></p>
       
       <ion-card-subtitle>Escuela Politécnica Nacional - Quito, Ecuador</ion-card-subtitle>
@@ -66,15 +86,15 @@
       <ion-icon slot="start" color="medium" name="book"></ion-icon>
       <ion-card-subtitle>2013</ion-card-subtitle>
       <p ALIGN="left" style="padding: 15px;"><strong>➢	Certificado Suficiencia Idioma Inglés</strong></p>
-      <p ALIGN="center">Howard Institute</p>
-      <a href="../assets/instCertificado.PNG">Ver</a>
+      <p ALIGN="center" >Howard Institute</p>
+      <a href="../assets/instCertificado.PNG" style="padding: 15px;">Ver</a>
     </ion-item>
     <ion-item>
       <ion-icon slot="start" color="medium" name="book"></ion-icon>
       <ion-card-subtitle>2017</ion-card-subtitle>
       <p ALIGN="left" style="padding: 15px;"><strong>➢	Certificado Suficiencia Idioma Inglés</strong></p>
       <p ALIGN="center">Centro de Educaci&oacute;n Continua</p>
-      <a href="../assets/epnCertificado.PNG">Ver</a>
+      <a href="../assets/epnCertificado.PNG" style="padding: 15px;">Ver</a>
     </ion-item>
   </ion-list>
   <ion-list lines="none">
@@ -85,8 +105,9 @@
       <ion-icon slot="start" color="medium" name="build"></ion-icon>
       <ion-card-subtitle>Noviembre 2019</ion-card-subtitle>
       <p ALIGN="left" style="padding: 15px;"><strong>Laboratorio de Tecnolog&iacute;a Industrial - Escuela Politécnica Nacional</strong><br> (02) 2976300 Ext:</p>
-      <p ALIGN="center">Diseño y an&aacute;lisis de base de datos</p>
+      <p ALIGN="center">Diseño y An&aacute;lisis de Base de Datos</p>
+      
     </ion-item>
   </ion-list>
-  
-</ion-content>
+
+
